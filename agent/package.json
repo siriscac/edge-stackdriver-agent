@@ -1,0 +1,15 @@
+{
+  "name": "stackdriver-edge-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "agent.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mviswanathan@google.com",
+  "license": "Apache 2.0",
+  "dependencies": {
+    "@google-cloud/logging": "^1.0.0",
+    "tail": "^1.2.1"
+  }
+}
