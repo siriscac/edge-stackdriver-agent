@@ -2,8 +2,12 @@ FROM ubuntu:14.04
 
 RUN apt-get update
 RUN apt-get -qq -y install curl
+
 RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 RUN apt-get install -y nodejs
+
+RUN apt-get install -y rsyslog
+CMD rsyslogd -n
 
 COPY rsyslog.conf /etc/rsyslog.conf
 RUN service rsyslog restart
