@@ -4,9 +4,15 @@ A simple lightweight agent to log from Apigee Edge to Stackdriver Logging.
 
 ## How to run
 
+## Local
 * Clone the project and CD to  `edge-stackdriver-agent`
 * Build the docker image - `docker build . -t edge-sd-agent`
 * Run it with args mentioned below - `docker run -it --env-file env.list`
+
+## Pull from docker registry
+* Do ``docker pull siriscac/syslog-ng``
+* Run it with args mentioned below - `docker run -it siriscac/syslog-ng --env-file env.list`
+
 
 ### Args
 
@@ -22,6 +28,11 @@ GSRV_TOKEN_URI=<token_uri in servicekey json>
 GSRV_AUTH_PROVIDER_CERT_URL=<auth_provider_x509_cert_url in servicekey json>
 GSRV_CLIENT_CERT_URL=<auth_provider_x509_cert_url in servicekey json>
 ```
+
+### Note
+
+When running on GCP, make sure to open the ports tcp:601 and udp:541 for 0.0.0.0/0 on firewall.
+
 
 # License
 
