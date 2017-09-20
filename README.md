@@ -1,6 +1,6 @@
 # Edge Stackdriver Agent
 
-A simple lightweight agent to log from Apigee Edge to Stackdriver Logging. 
+A simple lightweight agent to log from Apigee Edge to Stackdriver Logging. More information [here](https://sites.google.com/corp/google.com/cloudgravity/demos/api-runtime-monitoring-using-stackdriver)
 
 ## How to run
 
